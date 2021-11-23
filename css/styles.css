@@ -65,14 +65,18 @@ body {
 
 .header {
   background: #ffffff;
+  padding: top 24px;
+  padding-bottom: 25px;
 }
 
 .header-navigation {
   display: flex;
+  align-items: center;
 }
 
 .header-container {
   display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -108,6 +112,9 @@ body {
   margin-left: auto;
 }
 
+.header-item:not(last-child) {
+  margin-right: 50px;
+}
 .header-mail {
   font-style: normal;
   font-weight: 500;
@@ -124,6 +131,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-header-color);
+}
+.logo {
+  margin-right: 215px;
 }
 
 .logo {
