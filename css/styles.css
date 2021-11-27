@@ -14,6 +14,10 @@ ul {
   list-style: none;
 }
 
+.img {
+  display: block;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -55,6 +59,8 @@ body {
 }
 
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -163,6 +169,7 @@ body {
 /* ------------------Hero----------------------------  */
 .hero {
   background: #2f303a;
+  text-align: center;
 }
 
 .hero-list {
@@ -171,8 +178,9 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   color: var(--main-title-color);
-  flex-grow: 1;
-  padding: 200px 0 280px 452px;
+  /* flex-grow: 1; */
+  /* padding: 200px 0 280px 452px; */
+  margin-bottom: 40px;
 }
 
 .hero-btn {
@@ -182,7 +190,12 @@ body {
   letter-spacing: 0.06em;
   color: var(--accent-third-color);
   background-color: var(--accent-first-color);
-  margin-bottom: 40px;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 10px 32px;
+  border: 1px solid transparent;
+  min-width: 134px;
+  text-align: center;
 }
 
 .header-list .current {
@@ -195,9 +208,19 @@ body {
 }
 
 /* --------------ADVANTAGE --------------------*/
+
 .section-advantage {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.advantage-list .advantage-pre-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.visually-hidden {
+  margin-top: 0;
+  margin-bottom: 94px;
 }
 
 .advantage-pre-title {
@@ -206,13 +229,17 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
+  margin-bottom: 10px;
 }
-
+.advantage-list {
+  border: 1px solid;
+}
 .advantage-after-title {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--four-text-color);
+  margin-bottom: 10px;
 }
 
 /* ----------------WORK---------------- */
@@ -321,6 +348,7 @@ a {
 button {
   cursor: pointer;
   font-family: inherit;
+  border: 1px solid transparent;
 }
 
 :root {
@@ -385,6 +413,7 @@ ul {
 
 button {
   font-family: inherit;
+  border: 1px solid transparent;
 }
 
 /* Site nav */
@@ -477,6 +506,7 @@ button {
   line-height: 1.6;
   letter-spacing: 0.03em;
   text-decoration: none;
+  border: 1px solid transparent;
 }
 
 .button:hover,
