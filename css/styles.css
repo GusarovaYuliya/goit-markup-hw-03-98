@@ -389,13 +389,6 @@ body {
 }
 
 /* --------------------Портфолио ----------------------------*/
-
-button {
-  cursor: pointer;
-  font-family: inherit;
-  border: 1px solid transparent;
-}
-
 :root {
   --primary-text-color: #212121;
   --title-text-color: #757575;
@@ -403,22 +396,19 @@ button {
   --white-text-color: #ffffff;
   --black-text-color: #000000;
 }
-
 body {
+  background-color: #e5e5e5;
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
 }
-
-/* HEADER */
-
-.header {
-  background: #ffffff;
-  padding-top: 24px;
-  padding-bottom: 25px;
+ul {
+  list-style: none;
 }
 
-.header-link {
-  display: flex;
+.portfolio-header {
+  background: #e5e5e5;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .header-portfolio {
@@ -426,17 +416,27 @@ body {
   align-items: center;
 }
 
-.header-logo {
-  display: flex;
-}
-
-.portfolio-container {
+.header-portfolio-container {
   display: flex;
   align-items: center;
 }
-.logo {
+
+.site-nav {
   display: flex;
-  margin-right: 93px;
+  margin-left: 93px;
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.portfolio-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contact-class {
+  margin-right: 50px;
 }
 
 .logo {
@@ -448,7 +448,6 @@ body {
   line-height: 1.2;
   text-decoration: none;
 }
-
 .logo-class {
   color: var(--black-text-color);
   font-family: Raleway, sans-serif;
@@ -456,74 +455,132 @@ body {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
-  display: flex;
+  text-decoration: none;
 }
-
 button {
-  border-style: none;
   font-family: inherit;
-  border: 1px solid transparent;
 }
-
 /* Site nav */
-
-.site-nav {
-  display: flex;
-}
-.portfolio-item {
-  display: flex;
-}
-
-.portfolio-item:not(last-child) {
-  margin-right: 50px;
-}
-
-.portfolio-item {
+.site-nav .link {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   font-style: normal;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  display: flex;
+  text-decoration: none;
 }
-
-.portfolio-item .link:hover,
-.portfolio-item .link:focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
   color: var(--accent-color);
 }
-
-.link:not(:last-child) {
-  margin-right: 50px;
-}
-
-.portfolio-item .link.current {
+.site-nav .link.current {
   color: var(--accent-color);
 }
-
-/* Auth-nav */
-.auth-nav {
-  display: flex;
-  margin-left: auto;
-}
-
-.contact-mail {
+/* Auth-nav link */
+.contact-class {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
-
 .contact-tel {
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  margin-left: 50px;
+}
+/* -----------LIST----------- */
+..btn-container {
+  display: flex;
+  justify-content: center;
 }
 
-/* -----------LIST----------- */
+.btn-section {
+  display: flex;
+}
+
+.button-list {
+  display: flex;
+}
+
+
+
+
+.button-list {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--black-text-color);
+}
+/* Features */
+.feature-list .title {
+  color: var(--primary-text-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.title-text {
+  color: var(--title-text-color);
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+/* Button */
+.button {
+  color: var(--primary-text-color);
+  background-color: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.button:hover,
+.button:focus {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+.logo .class {
+  color: var(--white-text-color);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.logo-style .class {
+  color: var(--accent-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.adress-list .location {
+  color: var(--white-text-color);
+  font-style: normal;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.adress-list .contact {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+
+/* -----------LIST-----------
 
 .button-list {
   font-style: normal;
@@ -535,7 +592,7 @@ button {
   display: flex;
 }
 
-/* Features */
+--------------Features-------------------
 
 .feature-list .title {
   color: var(--primary-text-color);
@@ -552,7 +609,7 @@ button {
   letter-spacing: 0.03em;
 }
 
-/* Button */
+---------------Button----------------------
 .button-list {
   display: flex;
   flex-wrap: wrap;
@@ -585,32 +642,9 @@ button {
   margin-top: 132px;
   margin-bottom: 56px;
 }
-.button:hover,
-.button:focus {
-  color: var(--white-text-color);
-  background-color: var(--accent-color);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-}
-.logo .class {
-  color: var(--white-text-color);
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-}
 
-.logo-style .class {
-  color: var(--accent-color);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-}
+
+
 
 .portfolio-list {
   display: flex;
@@ -662,4 +696,4 @@ button {
   line-height: 1.7;
   letter-spacing: 0.03em;
   margin-bottom: 9px;
-}
+} */ */
