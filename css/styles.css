@@ -402,9 +402,7 @@ body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
 }
-ul {
-  list-style: none;
-}
+
 .img {
   display: block;
   max-width: 100%;
@@ -553,7 +551,7 @@ ul {
   letter-spacing: 0.03em;
 }
 /* Button */
-/* .button {
+.button {
   color: var(--primary-text-color);
   background-color: #f5f4fa;
   font-weight: 500;
@@ -561,7 +559,7 @@ ul {
   line-height: 1.6;
   letter-spacing: 0.03em;
   text-decoration: none;
-} */
+}
 .button:hover,
 .button:focus {
   color: var(--white-text-color);
