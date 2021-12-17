@@ -345,7 +345,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--four-text-color);
   text-align: center;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .masters-item-bottom {
@@ -397,6 +397,13 @@ body {
   color: var(--main-btn-color);
   margin-bottom: 9px;
 }
+.contacts-details {
+  margin-bottom: 9px;
+}
+
+.contacts-item {
+  margin-bottom: 9px;
+}
 
 /* --------------------Портфолио ----------------------------*/
 :root {
@@ -424,6 +431,8 @@ body {
   background: #ffffff;
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+  width: 1600px;
 }
 
 .header-portfolio {
@@ -435,7 +444,6 @@ body {
   display: flex;
   align-items: center;
   /* padding-bottom: 94px; */
-  border-bottom: 1px solid #ececec;
 }
 
 .link {
@@ -533,22 +541,21 @@ body {
 }
 
 /* -----------BUTTON -------------------*/
+.section-projects {
+  padding-top: 94px;
+}
 
 .button {
   font-family: inherit;
   min-width: 73px;
   min-height: 38px;
-  padding: 6px 22px;
+  /* padding: 6px 22px; */
 }
 
-.section-button {
-  padding-top: 100px;
-  padding-bottom: 56px;
-}
 .button-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 .btn-item {
   margin-right: 8px;
@@ -569,7 +576,7 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-width: 0px;
-  padding: 6px 22px;
+  /* padding: 6px 22px; */
   display: inline-block;
   border: 1px solid transparent;
   text-align: center;
@@ -581,9 +588,8 @@ body {
   background-color: #2196f3;
 }
 /* ---------Portfolio---------- */
-.section-projects {
-  padding-top: 50px;
-  padding-bottom: 94px;
+.section-masters {
+  margin-top: 50px;
 }
 
 .portfolio-list {
@@ -802,5 +808,9 @@ body {
   font-style: normal;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  margin-bottom: 9px;
+}
+
+.adress-location {
   margin-bottom: 9px;
 }
